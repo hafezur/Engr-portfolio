@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section>
+  {% for i in letest_project %}
+  <div class="innerPageBannerCol">
+    <div class="container">
+      <div class="row g-4 g-md-3  align-items-center">
+        <div class="col-md-6">
+          <div class="bannerContent">
+            <h1 class="xlTitle pb-md-3">{{i.name|title}} </h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-auto">
+          <div class="authorCol">
+            <img src="{{i.image.url}}" alt="..." >
+          </div>
+          <br>
+          <div class="authorCol">
+            <h3>Description:</h3>
+            <h4 class="smTitle pb-3">{{i.description}}</h4>
+          </div>
+        </div>
+        <div >
+          <h3>Github Link:</h3>
+          <h4 class="smTitle pb-3"><a href="{{i.url_field}}">{{i.url_field}}</a></h4>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  {% endfor%}
+</section>
+
+<section>
+  {% for i in blog2 %}
+  <div class="sectionSpaceSm">
+    <div class="container">
+      {{i.body|safe}}
+    </div>
+  </div>
+  {% endfor%}
+</section>
+
+{% endblock %}
+
+   

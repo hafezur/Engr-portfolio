@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main>
+    <!--section-1 start-->
+    <section class="mt-3">
+           <div class='d-flex'>
+                <div class="text-center">
+                    <h1>
+                        Hi, I'm Hafezur Rahman <br> a Backend Engineer 
+                    </h>
+                    <h5><p>I am Hafezur Rahman a Backend Engineer. I complete my graduation from Southeast University at Dhaka</p></h5>
+                    <div>
+                    <button type="button" class="btn btn-primary">Download Resume</button>
+                    <button type="button" class="btn btn-success">Contact</button>
+                    </div>
+                </div>
+                <div>
+                    <img src="{% static 'images/hafiz.jpg'%}">
+                </div>
+           </div>
+    </section>
+    <!--section-1 end-->
+
+</main>
+{% endblock %}

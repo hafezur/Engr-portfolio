@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  <div class="card mb-3 p-2 bg-info rounded-2" style="max-width: 1440px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="{% static 'images/hafiz.jpg'%}" class="img-fluid rounded-start " alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h2 class="card-title text-center" >Hello EveryOne</h2>
+          <div class=" text-center" >
+              <h3>Welcome To MyPortfolio Website</h3>
+          </div>
+          <br><br>
+          <div class=" text-center" >
+            <h4>My Academic Qualification</h4>
+            <h5>BSc. in Engineering</h5>
+            <h5>PGD. in Software Engineering</h5>
+
+          </div>
+          <br><br>
+          <div class=" text-center">
+          <p class="card-text">I am Hafezur Rahman I am From Bangladesh. I complete my Graduation in BSc in Engineering from Southeast University ,Dhaka.
+            I am a Software Engineer Also. I have Too Much knowledge on Programming. and Also have too much Knowledge in Data Structure and Algorithm. Now I am Looking A Software Engineer job.</p>
+          <p class="card-text"><small class="text-muted">Last updated 29Apr 2024</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endblock %}
